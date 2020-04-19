@@ -7,48 +7,10 @@ $router = new MyRouter();
 $router->addGet(
     '/',
     [
-        'controller' => 'home',
+        'controller' => 'estructura',
         'action'     => 'home',
     ]
 );
 
-$router->addPost(
-    '/logIn',
-    [
-        'controller' => 'home',
-        'action'     => 'logIn',
-    ]
-);
 
-$router->addGet(
-    '/signUp',
-    [
-        'controller' => 'signup',
-        'action'     => 'register',
-    ]
-);
-
-$router->addPost(
-    '/signUp',
-    [
-        'controller' => 'signup',
-        'action'     => 'signup',
-    ]
-);
-
-$router->addGet(
-    '/menu',
-    [
-        'controller' => 'menu',
-        'action'     => 'principal',
-    ]
-);
-
-$router->addGet(
-    '/menu/{id}',
-    [
-        'controller' => 'signup',
-        'action'     => 'signup',
-    ]
-);
 return $router;
