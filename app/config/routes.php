@@ -7,7 +7,7 @@ $router = new MyRouter();
 $router->addGet(
     '/',
     [
-        'controller' => 'estructura',
+        'controller' => 'home',
         'action'     => 'home',
     ]
 );
